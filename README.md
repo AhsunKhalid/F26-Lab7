@@ -399,3 +399,39 @@ plt.show()
     - lab7f.py
     - lab7g.py
     - lab7h.py
+
+# 🛠️ Codespaces Troubleshooting Guide: Fixing Module Errors
+
+If you run your lab script and see an error that looks like this:
+`ModuleNotFoundError: No module named 'numpy'` (or `'pandas'`, `'matplotlib'`)
+
+It means that the required Python data science packages are not yet installed in your GitHub Codespaces environment. Follow the quick steps below to fix it.
+
+---
+
+## 🚀 The Fix
+
+Copy and paste the following command directly into your terminal and press **Enter**:
+
+```bash
+pip install numpy pandas matplotlib
+```
+
+### 💡 Alternative Command (If the above fails)
+If you get a `command not found` error or the issue persists, use the explicit path to the Python environment tied to your Codespace:
+
+```bash
+/home/codespace/.python/current/bin/python3 -m pip install numpy pandas matplotlib
+```
+
+---
+
+## 🔄 Next Steps
+
+Once the installation finishes successfully, **re-run your lab script** using your assignment command:
+
+```bash
+/home/codespace/.python/current/bin/python3 /workspaces/F26-Lab7/lab7a.py
+```
+
+Your code should now import the libraries properly and run without any missing module errors!
