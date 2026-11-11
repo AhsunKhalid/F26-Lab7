@@ -12,3 +12,6 @@
 
 # TO DO 3: Run the script.
 
+import pandas as pd
+movies=pd.read_csv ("/workspace/F26-Lab7-In-Class/imdb_top250.csv")
+print(movies.head(5))
